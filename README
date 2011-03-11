@@ -1,0 +1,21 @@
+/*
+* Use this php function on paths images, css, js, or other media to force a path based on the files modified date
+* Good for dev sites to ensure Users will not cache newly updated files 
+* (no more telling a client "oh... yeah update your cache... thats why it isn't working")
+* 
+* Can possibly be used with far future expires headers to improve performance and auto clear when files are updated.
+* Performance of php has not been tested though.
+*
+* 
+* usage: 
+*
+*	<script src="<?c( '/javascripts/myscript.js' )?>" ></script>
+*	
+*		- or - 
+*	
+*	<link type="text/css" rel="stylesheet" media="all" href="<?c('/css/global.css')?>" />
+*
+*		- or - 
+*
+*	<img src="<?c('/images/myimg.jpg')?>"
+*/
